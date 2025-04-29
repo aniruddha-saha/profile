@@ -17,6 +17,38 @@
             border-radius: 50%; /* Makes the photo circular */
             margin-top: 10px;
         }
+        
+        /* Style for the IMC achievement section */
+        .achievement {
+            margin: 30px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .achievement-img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .certificate-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #1a73e8;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .certificate-btn:hover {
+            background-color: #0d5bba;
+        }
     </style>
 </head>
 <body>
@@ -34,6 +66,18 @@
         <h2>About Me</h2>
         <p>"Quantitative researcher and software developer merging computational science and mathematical modeling to develop novel algorithmic solutions."</p>
     </section>
+    
+    <!-- New IMC Achievement Section -->
+    <section class="achievement">
+        <h2>Trading Achievement</h2>
+        <p><strong>IMC Prosperity3 | Global Rank 10 | April 2025</strong></p>
+        <p>Achieved top 10 ranking among 10,000+ global participants in IMC's algorithmic and manual trading challenge</p>
+        <img src="rank.jpg" alt="IMC Prosperity Global Rank 10" class="achievement-img">
+        <div>
+            <a href="cert.png" class="certificate-btn" target="_blank">View Certificate</a>
+        </div>
+    </section>
+    
     <section>
         <h2>Publications and Conferences</h2>
         <ul>
@@ -47,7 +91,6 @@
             <li><a href="https://pubs.rsc.org/en/content/articlelanding/2020/sm/d0sm01663b/unauth">Universality in coalescence of polymeric fluids. Soft Matter, 16(48), 10921-10927.</a> </li>
             <li><a href="https://pubs.aip.org/aip/pof/article-abstract/33/12/123101/1062047/Coalescence-of-polymeric-sessile-drops-on-a?redirectedFrom=fulltext">Coalescence of polymeric sessile drops on a partially wettable substrate. Physics of Fluids 33.12 (2021).</a> </li>
             <li><a href="https://pubs.acs.org/doi/abs/10.1021/acs.langmuir.1c01861">Contact line pinning and depinning can modulate the rod-climbing effect. Langmuir 37.51 (2021): 14785-14792.</a></li>
-
         </ul>
     </section>
 </body>
