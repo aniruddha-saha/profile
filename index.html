@@ -304,67 +304,128 @@
 
 
     <!-- My Works Section -->
-    <section class="works-section" id="my-works">
+<!-- My Internships Section -->
+    <section class="works-section" id="my-internships">
         <h2>My Internships</h2>
         <div class="tiles-container">
-            <a href="#microfluidics" class="tile">
-                <img src="microfluidics-thumb.jpg" alt="Ansys" class="tile-img">
-                <h3>Microfluidics</h3>
+            <a href="#ansys" class="tile">
+                <img src="ansys-thumb.jpg" alt="ANSYS" class="tile-img">
+                <h3>ANSYS</h3>
             </a>
             
-            <a href="#reacting-flows" class="tile">
-                <img src="reacting-flows-thumb.jpg" alt="Nasa Ames Research Center" class="tile-img">
-                <h3>Reacting Flows</h3>
+            <a href="#nasa" class="tile">
+                <img src="nasa-thumb.jpg" alt="NASA Ames Research Center" class="tile-img">
+                <h3>NASA Ames Research Center</h3>
             </a>
             
-            <a href="#molecular-dynamics" class="tile">
-                <img src="molecular-dynamics-thumb.jpg" alt="Heat Inverse" class="tile-img">
-                <h3>Molecular Dynamics</h3>
+            <a href="#iisc" class="tile">
+                <img src="iisc-thumb.jpg" alt="Indian Institute of Science" class="tile-img">
+                <h3>Indian Institute of Science</h3>
             </a>
             
-            <a href="#droplets-nonnewtonian" class="tile">
-                <img src="droplets-thumb.jpg" alt="Indian Institute of Science" class="tile-img">
-                <h3>Droplets & Non-Newtonian Fluids</h3>
+            <a href="#heat-inverse" class="tile">
+                <img src="heat-inverse-thumb.jpg" alt="Heat Inverse" class="tile-img">
+                <h3>Heat Inverse</h3>
             </a>
         </div>
     </section>
     
-    <!-- Work Detail Sections -->
-    <section class="work-detail" id="microfluidics">
-        <h2>Microfluidics</h2>
+    <!-- Internship Detail Sections -->
+    <section class="work-detail" id="ansys">
+        <h2>ANSYS - Thermal Simulations Intern</h2>
+        <h4>Austin, TX | May 2024 - August 2024</h4>
+        <img src="ansys.jpg" alt="ANSYS Internship" style="max-width: 600px; width: 100%; height: auto; margin: 20px 0; border-radius: 8px;">
         <p>
-            My research in microfluidics focuses on understanding and controlling fluid behavior at the microscale. 
-            I've developed novel computational models to study capillary dynamics, wicking phenomena, and passive 
-            control mechanisms in micro-channels. This work has applications in lab-on-a-chip devices, drug delivery 
-            systems, and advanced materials processing.
+            During my internship at ANSYS, I developed an automated Python toolbox for ICEPAK focused on estimating 
+            heat transfer properties in electronic cooling from circuit designs. This toolbox is currently under 
+            testing for production deployment and has the potential to significantly streamline thermal analysis 
+            workflows for electronics engineers.
         </p>
         <p>
-            Key achievements include developing a universal framework for capillary dynamics and investigating 
-            passive control of capillary rise in micro-channels, which has important implications for designing 
-            more efficient microfluidic devices.
-        </p>
-        
-        <h3>Bachelor's Thesis</h3>
-        <h4>Particle migration in deformable channels coupled with the Fåhræus-Lindqvist effect</h4>
-        <p><a href="bachelors-thesis.pdf" target="_blank" style="color: #1a73e8; font-weight: bold;">📄 Read Full Thesis (PDF)</a></p>
-        <img src="bachelors-thesis-microfluidics.jpg" alt="Particle migration in deformable channels" style="max-width: 100px; width: 100%; height: auto; margin: 20px 0; border-radius: 8px;">
-        <p>
-            This research investigated the Fåhræus-Lindqvist effect as a mechanism for controlling particle migration 
-            in deformable channels. The study explored how fluid pressure driving the flow manifests into wall deformation, 
-            with flow behavior governed by the Giesekus constitutive relation. A key finding was that the superposition 
-            of contributions to migration from elastic forces and non-uniform channel geometry leads to a variety of 
-            particle distributions with precise control capabilities.
+            A key technical achievement was creating algorithms to generate 3D conductivity vector fields from 2D 
+            grayscale maps, enabling accurate modeling of material distributions for different hardware components 
+            including resistors, capacitors, vias, dielectrics, and fans. Through optimized computational geometry 
+            and matrix operations, I achieved a 3x speedup in preprocessing while maintaining 98% accuracy.
         </p>
         <p>
-            The work demonstrated that the tendency of the deformed channel to enhance migration is well captured by 
-            the formation of a Newtonian layer that inhibits lateral movement of particles in localized regions. The 
-            complex interplay between this effect and wall deformability in modulating particle motion was quantified 
-            through a particle distribution function constructed for theoretically neutrally buoyant particles across 
-            an array of flow tuning parameters. This research has important implications for understanding blood flow 
-            dynamics and designing microfluidic separation devices.
+            I also architected a full-stack software module using PySide6, integrating numerical solvers with a GUI 
+            for rapid analysis of complex ECAD geometries. This work combined my expertise in thermal modeling with 
+            software engineering to deliver practical tools for industry applications.
         </p>
-        
-        <a href="#my-works" class="back-to-top">← Back to My Works</a>
+        <a href="#my-internships" class="back-to-top">← Back to My Internships</a>
+    </section>
+    
+    <section class="work-detail" id="nasa">
+        <h2>NASA Ames Research Center - Fluid-Solid Modeling Intern</h2>
+        <h4>Mountain View, CA | June 2023 - August 2023</h4>
+        <img src="nasa.png" alt="NASA Internship" style="max-width: 600px; width: 100%; height: auto; margin: 20px 0; border-radius: 8px;">
+        <p>
+            At NASA Ames Research Center, I worked on the PuMA (Porous Microstructure Analysis) multiphysics software, 
+            focusing on computational efficiency and accuracy improvements. My primary contribution was engineering 
+            Monte Carlo integration algorithms that achieved a remarkable 100x acceleration in volumetric property 
+            evaluation through advanced sampling and variance reduction techniques.
+        </p>
+        <p>
+            I developed sophisticated filtering algorithms for sparse 3D spatial data, optimizing numerical accuracy 
+            for average property calculations in porous materials. This work was critical for characterizing materials 
+            used in aerospace applications where accurate property prediction is essential for performance and safety.
+        </p>
+        <p>
+            Additionally, I conducted research on periodicity in random 3D point maps and its impact on the calculation 
+            of average values across different control volumes. This fundamental research contributed to improving the 
+            reliability of property predictions in heterogeneous materials, which has broad applications in materials 
+            science and engineering.
+        </p>
+        <a href="#my-internships" class="back-to-top">← Back to My Internships</a>
+    </section>
+    
+    <section class="work-detail" id="iisc">
+        <h2>Indian Institute of Science - Computational Modeling Researcher</h2>
+        <h4>Bengaluru, India | May 2019 - July 2021</h4>
+        <img src="iisc.png" alt="IISc Research" style="max-width: 600px; width: 100%; height: auto; margin: 20px 0; border-radius: 8px;">
+        <p>
+            My extended research position at the Indian Institute of Science resulted in groundbreaking work on 
+            non-Newtonian fluid dynamics. I published the first study on universality of droplet coalescence in 
+            non-Newtonian fluids using both sessile and pendant droplet generation techniques. This work revealed 
+            fundamental scaling laws that govern coalescence behavior across different polymeric systems.
+        </p>
+        <p>
+            On the computational side, I derived and implemented novel numerical schemes for viscoelastic fluid 
+            dynamics, particularly for discretizing stress tensor evolution equations. These methods improved the 
+            stability and accuracy of simulations for complex fluid flows that exhibit both viscous and elastic 
+            properties.
+        </p>
+        <p>
+            I also developed high-performance computing codes for molecular dynamics simulations across distributed 
+            computing clusters, optimizing particle interaction models at atomic scales to model evaporation of gases 
+            at low temperatures. This multi-scale approach bridged continuum and molecular perspectives, providing 
+            deeper insights into fluid behavior. The work resulted in three peer-reviewed publications in prestigious 
+            journals including Physics of Fluids, Soft Matter, and Langmuir.
+        </p>
+        <a href="#my-internships" class="back-to-top">← Back to My Internships</a>
+    </section>
+    
+    <section class="work-detail" id="heat-inverse">
+        <h2>Heat Inverse - Thermal Engineering Intern</h2>
+        <h4>Ithaca, NY | July 2022 - December 2022</h4>
+        <img src="heat.png" alt="Heat Inverse Internship" style="max-width: 600px; width: 100%; height: auto; margin: 20px 0; border-radius: 8px;">
+        <p>
+            At Heat Inverse, I worked on developing quantitative models for cooling performance using electromagnetic 
+            theory. This innovative approach improved performance predictions for radiative cooling systems by 
+            incorporating fundamental physics principles into the modeling framework.
+        </p>
+        <p>
+            I leveraged Python's Lowtran and Macromax libraries to simulate and analyze electromagnetic radiation 
+            through thin films. This work involved understanding the interaction between electromagnetic waves and 
+            material properties to optimize thermal management solutions. The models I developed helped predict how 
+            different thin-film configurations would perform under various operating conditions.
+        </p>
+        <p>
+            This internship provided valuable experience in applying theoretical electromagnetic concepts to practical 
+            thermal engineering problems, demonstrating how multi-physics approaches can lead to more accurate and 
+            comprehensive solutions in thermal management applications.
+        </p>
+        <a href="#my-internships" class="back-to-top">← Back to My Internships</a>
     </section>
     
     <section>
