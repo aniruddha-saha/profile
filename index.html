@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aniruddha Saha - Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            margin: 20px;
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+        }
         header { margin-bottom: 30px; }
         h1 { color: #333; }
         a { text-decoration: none; color: #1a73e8; }
@@ -14,7 +19,7 @@
         .profile-photo {
             width: 150px;
             height: 150px;
-            border-radius: 50%; /* Makes the photo circular */
+            border-radius: 50%;
             margin-top: 10px;
         }
         
@@ -57,6 +62,103 @@
             text-align: left;
             line-height: 1.6;
         }
+        
+        /* Google Scholar logo style */
+        .scholar-logo {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        
+        /* My Works Section Styles */
+        .works-section {
+            margin: 50px auto;
+            max-width: 900px;
+        }
+        
+        .tiles-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+            padding: 20px;
+        }
+        
+        .tile {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+        
+        .tile:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+        
+        .tile-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .tile h3 {
+            margin: 0;
+            color: #1a73e8;
+            font-size: 1.3em;
+        }
+        
+        /* Work Detail Sections */
+        .work-detail {
+            margin: 60px auto;
+            max-width: 900px;
+            padding: 30px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            text-align: left;
+        }
+        
+        .work-detail h2 {
+            color: #1a73e8;
+            border-bottom: 3px solid #1a73e8;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .work-detail p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        
+        .back-to-top {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #1a73e8;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .back-to-top:hover {
+            background-color: #0d5bba;
+        }
+        
+        /* Responsive design for mobile */
+        @media (max-width: 768px) {
+            .tiles-container {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -65,22 +167,27 @@
         <h1>Aniruddha Saha</h1>
         <p><a href="https://linkedin.com/in/aniruddhasaha1" target="_blank">LinkedIn</a> |
            <a href="https://github.com/aniruddha-saha" target="_blank">GitHub</a> |
-            <a href="https://scholar.google.co.in/citations?user=7hd_v9IAAAAJ&hl=en&authuser=2" target="_blank">Publications</a> |
            <a href="mailto:as2742@cornell.edu">Email: as2742@cornell.edu</a>
+        </p>
+        <p>
+            <a href="https://scholar.google.co.in/citations?user=7hd_v9IAAAAJ&hl=en&authuser=2" target="_blank">
+                <img src="google-scholar-logo.png" alt="Google Scholar" class="scholar-logo">Publications
+            </a>
         </p>
         <p><a href="aniruddha_saha_resume.pdf" download>Download My Resume</a></p>
     </header>
+    
     <section>
         <h2>About Me</h2>
         <p>Quantitative researcher and software developer merging computational science and mathematical modeling to develop novel algorithmic solutions.</p>
         
-        <!-- New paragraph about you -->
         <div class="about-text">
             <p>I am a PhD candidate at Cornell University specializing in computational fluid dynamics and quantitative methods. My research focuses on developing novel algorithms at the intersection of physics, mathematics, and computer science. With experience in both academic research and industry applications, I've contributed to projects at NASA, ANSYS, and various research institutes. Recently, I achieved a global top 10 ranking in the IMC Prosperity algorithmic trading competition, demonstrating my ability to apply computational techniques to financial markets.</p>
         </div>
     </section>
     
-    <!-- New IMC Achievement Section -->
+    <!-- IMC Achievement Section - Commented Out -->
+    <!--
     <section class="achievement">
         <h2>Trading Achievement</h2>
         <p><strong>IMC Prosperity3 | Global Rank 10 | April 2025</strong></p>
@@ -89,6 +196,97 @@
         <div>
             <a href="cert.png" class="certificate-btn" target="_blank">View Certificate</a>
         </div>
+    </section>
+    -->
+    
+    <!-- My Works Section -->
+    <section class="works-section" id="my-works">
+        <h2>My Works</h2>
+        <div class="tiles-container">
+            <a href="#microfluidics" class="tile">
+                <img src="microfluidics-thumb.jpg" alt="Microfluidics" class="tile-img">
+                <h3>Microfluidics</h3>
+            </a>
+            
+            <a href="#reacting-flows" class="tile">
+                <img src="reacting-flows-thumb.jpg" alt="Reacting Flows" class="tile-img">
+                <h3>Reacting Flows</h3>
+            </a>
+            
+            <a href="#molecular-dynamics" class="tile">
+                <img src="molecular-dynamics-thumb.jpg" alt="Molecular Dynamics" class="tile-img">
+                <h3>Molecular Dynamics</h3>
+            </a>
+            
+            <a href="#droplets-nonnewtonian" class="tile">
+                <img src="droplets-thumb.jpg" alt="Droplets and Non-Newtonian Fluids" class="tile-img">
+                <h3>Droplets & Non-Newtonian Fluids</h3>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Work Detail Sections -->
+    <section class="work-detail" id="microfluidics">
+        <h2>Microfluidics</h2>
+        <p>
+            My research in microfluidics focuses on understanding and controlling fluid behavior at the microscale. 
+            I've developed novel computational models to study capillary dynamics, wicking phenomena, and passive 
+            control mechanisms in micro-channels. This work has applications in lab-on-a-chip devices, drug delivery 
+            systems, and advanced materials processing.
+        </p>
+        <p>
+            Key achievements include developing a universal framework for capillary dynamics and investigating 
+            passive control of capillary rise in micro-channels, which has important implications for designing 
+            more efficient microfluidic devices.
+        </p>
+        <a href="#my-works" class="back-to-top">← Back to My Works</a>
+    </section>
+    
+    <section class="work-detail" id="reacting-flows">
+        <h2>Reacting Flows</h2>
+        <p>
+            My work in reacting flows combines computational fluid dynamics with combustion science to develop 
+            more efficient and stable burner designs. I've investigated porous media burners with various 
+            topological configurations and studied their dynamic stability under oscillating inlet conditions.
+        </p>
+        <p>
+            Notable contributions include integrating bio-inspired morphologies into porous media burners and 
+            developing computational insights on interphase heat exchange. I've also worked on low-temperature 
+            photocatalytic dry reforming of methane over novel catalyst structures, contributing to cleaner 
+            energy technologies.
+        </p>
+        <a href="#my-works" class="back-to-top">← Back to My Works</a>
+    </section>
+    
+    <section class="work-detail" id="molecular-dynamics">
+        <h2>Molecular Dynamics</h2>
+        <p>
+            Through molecular dynamics simulations, I investigate the fundamental behavior of materials at the 
+            atomic and molecular scale. This work bridges the gap between quantum mechanics and continuum 
+            mechanics, providing insights into material properties and fluid behavior that cannot be captured 
+            by macroscopic models alone.
+        </p>
+        <p>
+            My research in this area has contributed to understanding complex fluid behaviors, particularly in 
+            polymeric systems, and has applications in designing new materials with tailored properties for 
+            specific engineering applications.
+        </p>
+        <a href="#my-works" class="back-to-top">← Back to My Works</a>
+    </section>
+    
+    <section class="work-detail" id="droplets-nonnewtonian">
+        <h2>Droplets & Non-Newtonian Fluids</h2>
+        <p>
+            My research on droplets and non-Newtonian fluids explores the fascinating physics of complex fluids 
+            under various conditions. I've studied the coalescence dynamics of polymeric fluids, sessile drop 
+            behavior on partially wettable substrates, and contact line dynamics.
+        </p>
+        <p>
+            Key findings include discovering universality in coalescence of polymeric fluids and demonstrating 
+            how contact line pinning and depinning can modulate phenomena like the rod-climbing effect (Weissenberg effect). 
+            This work has implications for coating processes, inkjet printing, and understanding biological fluid flows.
+        </p>
+        <a href="#my-works" class="back-to-top">← Back to My Works</a>
     </section>
     
     <section>
